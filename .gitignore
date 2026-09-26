@@ -23,3 +23,5 @@ node_modules/
 dist/
 .git-old/
 .git-old/
+.vercel
+.env*
