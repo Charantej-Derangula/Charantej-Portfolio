@@ -1,0 +1,9 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/Public/Charan-Tej-Derangula-Resume.pdf",
+      "destination": "/Charan-Tej-Derangula-Resume.pdf"
+    }
+  ]
+}

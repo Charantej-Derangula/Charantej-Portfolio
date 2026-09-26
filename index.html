@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary Meta Tags -->
+  <title>Charan Tej Derangula | Data · AI · Code</title>
+  <meta name="title" content="Charan Tej Derangula | Data · AI · Code" />
+  <meta name="description"
+    content="Portfolio of Charan Tej Derangula — Computer Science (Data Science) student who builds software and intelligent experiences turning data, computation and ideas into useful products." />
+  <meta name="keywords"
+    content="Charan Tej Derangula, Data Science, AI, Machine Learning, Auto Pulse, Team Eclipse, Eclipse 2026, Full Stack, Python, Software Developer, Vijayawada" />
+  <meta name="author" content="Charan Tej Derangula" />
+  <meta name="theme-color" content="#0d0f12" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Charan Tej Derangula | Data · AI · Code" />
+  <meta property="og:description"
+    content="I build software and intelligent experiences that turn data, computation and ideas into useful products." />
+
+  <!-- Google Fonts: Newsreader (Editorial Serif), Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230d0f12'/><text x='50%' y='55%' dominant-baseline='central' text-anchor='middle' fill='%23d97706' font-family='monospace' font-size='44' font-weight='700'>CD</text></svg>" />
+</head>
+
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+  <!-- Subtle Computational / Data Visualization Canvas (Ambient Parallax, OS Cursor Unchanged) -->
+  <div class="data-canvas-container" aria-hidden="true">
+    <canvas id="dataCanvas"></canvas>
+  </div>
+
+  <!-- Minimal Sticky Navigation Header -->
+  <header class="site-nav" id="topNav">
+    <div class="container nav-container">
+
+      <!-- Brand Wordmark -->
+      <a href="#hero" class="nav-brand" aria-label="Charan Tej Derangula Home">
+        <span class="brand-title">Charan Tej</span>
+        <span class="brand-subtitle">Data &bull; AI &bull; Code</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#hackathon" class="nav-link">Hackathon</a></li>
+          <li><a href="#strengths" class="nav-link">Strengths</a></li>
+          <li><a href="#stack" class="nav-link">Stack</a></li>
+          <li><a href="#credentials" class="nav-link">Credentials</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions: Theme Toggle, Command Palette, Native Resume Link -->
+      <div class="nav-actions">
+
+        <!-- Command Palette Trigger -->
+        <button id="cmdPaletteBtn" class="cmd-palette-trigger" title="Command Palette (⌘K or Ctrl+K)"
+          aria-label="Open Command Palette">
+          <span>Search</span>
+          <kbd class="cmd-kbd">⌘K</kbd>
+        </button>
+
+        <!-- Theme Toggle (Dark / Light) -->
+        <button id="themeToggleBtn" class="theme-toggle-btn" title="Toggle Theme"
+          aria-label="Toggle dark and light theme">
+          <svg id="themeMoonIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg id="themeSunIcon" style="display:none;" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- Native Resume Link (Opens in new tab using native browser viewer) -->
+        <a href="/Charan-Tej-Derangula-Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-nav-resume"
+          id="navResumeBtn" aria-label="Open Resume PDF in new tab">
+          <span>Resume</span>
+          <span aria-hidden="true">&nearr;</span>
+        </a>
+
+        <!-- Mobile Drawer Toggle -->
+        <button id="mobileNavToggle" class="mobile-nav-toggle" aria-label="Toggle navigation drawer"
+          aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
+      <ul class="mobile-menu-list">
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#work" class="mobile-nav-link">Work</a></li>
+        <li><a href="#hackathon" class="mobile-nav-link">Hackathon</a></li>
+        <li><a href="#strengths" class="mobile-nav-link">Strengths</a></li>
+        <li><a href="#stack" class="mobile-nav-link">Stack</a></li>
+        <li><a href="#credentials" class="mobile-nav-link">Credentials</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-bottom">
+        <a href="/Charan-Tej-Derangula-Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+          style="width: 100%;">
+          <span>View Resume (PDF)</span>
+          <span aria-hidden="true">&nearr;</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Landmark -->
+  <main id="mainContent">
+
+    <!-- ======================================================================
+         HERO SECTION (Editorial, Builder Identity)
+         ====================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+
+        <!-- Left: Editorial Typography & Positioning Pitch -->
+        <div class="hero-text-block">
+
+          <div class="hero-eyebrow">
+            <span class="dot" aria-hidden="true"></span>
+            <span>CSE (Data Science)</span>
+          </div>
+
+          <h1 class="hero-name">
+            <span class="first-name">Charan Tej</span>
+            <span class="last-name">Derangula</span>
+          </h1>
+
+          <div class="hero-discipline">
+            <span>Data</span>
+            <span class="sep">&bull;</span>
+            <span>AI</span>
+            <span class="sep">&bull;</span>
+            <span>Code</span>
+          </div>
+
+          <p class="hero-lead">
+            I build software and intelligent experiences that turn data, computation and ideas into useful products.
+          </p>
+
+          <p class="hero-statement">
+            Build with curiosity. Solve with data. Create with intent.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#work" class="btn btn-primary">
+              <span>View Work</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+              </svg>
+            </a>
+
+            <a href="/Charan-Tej-Derangula-Resume.pdf" target="_blank" rel="noopener noreferrer"
+              class="btn btn-secondary" id="heroResumeBtn" aria-label="Open Resume in new tab">
+              <span>Resume</span>
+              <span aria-hidden="true">&nearr;</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right: Editorial Academic Telemetry Panel -->
+        <div class="hero-meta-panel interactive-card" tabindex="0" aria-label="Academic Telemetry & Engineering Focus">
+          <div class="meta-panel-title">
+            <span>Academic Telemetry</span>
+            <span>Vijayawada, IN</span>
+          </div>
+
+          <div class="meta-stats-list">
+            <div class="meta-stat-item">
+              <span class="meta-stat-label">Current Standing</span>
+              <span class="meta-stat-value">3rd Year</span>
+              <span class="meta-stat-sub">B.Tech in Computer Science (Data Science)</span>
+            </div>
+
+            <div class="meta-stat-item">
+              <span class="meta-stat-label">Academic Performance</span>
+              <span class="meta-stat-value">CGPA 8.5</span>
+              <span class="meta-stat-sub">Prasad V Potluri Siddhartha Institute of Technology</span>
+            </div>
+
+            <div class="meta-stat-item">
+              <span class="meta-stat-label">Timeline</span>
+              <span class="meta-stat-value">Grad. 2028</span>
+              <span class="meta-stat-sub">Cohort 2024 &ndash; 2028</span>
+            </div>
+
+            <div class="meta-stat-item">
+              <span class="meta-stat-label">Current Focus</span>
+              <span class="meta-stat-value" style="color: var(--accent);">Data Science &bull; Applied AI &bull; Software</span>
+              <span class="meta-stat-sub">Building intelligent experiences &amp; digital products</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Refined Editorial Scroll Indicator -->
+      <div class="hero-scroll-wrapper" id="heroScrollWrapper">
+        <a href="#about" class="hero-scroll-indicator" id="heroScrollIndicator" aria-label="Scroll to explore about and background">
+          <span class="scroll-text desktop-text">Scroll to explore</span>
+          <span class="scroll-text mobile-text">Scroll</span>
+          <svg class="scroll-arrow" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <polyline points="19 12 12 19 5 12"></polyline>
+          </svg>
+        </a>
+        <div class="hero-scroll-line" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         ABOUT SECTION: WHAT I BUILD & PHILOSOPHY
+         ====================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-label">Background &amp; Philosophy</div>
+          <h2 class="section-title">Data Science, Applied Engineering &amp; Purposeful Software</h2>
+        </div>
+
+        <div class="about-grid">
+
+          <div class="about-narrative">
+            <p>
+              I am a <strong>Computer Science (Data Science) undergraduate</strong> who enjoys building software, exploring AI and data, experimenting with technology, and turning ideas into useful digital products.
+            </p>
+            <p>
+              My work centers on the intersection of data science, artificial intelligence, and full-stack software development. Rather than treating machine learning models in isolation, I focus on integrating them into robust, user-facing applications that solve tangible problems.
+            </p>
+            <p>
+              Whether developing analytical models, structuring database architectures, or refining reactive interfaces, I prioritize clarity, computational efficiency, and clean engineering practices.
+            </p>
+
+            <div class="about-pillars interactive-card-group">
+              <div class="pillar-card interactive-card" tabindex="0">
+                <div class="pillar-heading-row">
+                  <span class="card-status-dot" aria-hidden="true"></span>
+                  <div class="pillar-title">Data Science &amp; Analytics</div>
+                </div>
+                <div class="pillar-text">Statistical inference, exploratory data analysis, numerical modeling, and structured data visualization.</div>
+              </div>
+              <div class="pillar-card interactive-card" tabindex="0">
+                <div class="pillar-heading-row">
+                  <span class="card-status-dot" aria-hidden="true"></span>
+                  <div class="pillar-title">Machine Learning &amp; AI</div>
+                </div>
+                <div class="pillar-text">Predictive modeling, deep learning architectures, Generative AI integration, and natural language processing.</div>
+              </div>
+              <div class="pillar-card interactive-card" tabindex="0">
+                <div class="pillar-heading-row">
+                  <span class="card-status-dot" aria-hidden="true"></span>
+                  <div class="pillar-title">Full-Stack Systems</div>
+                </div>
+                <div class="pillar-text">Responsive web engineering, component design systems, REST API architecture, and database persistence.</div>
+              </div>
+              <div class="pillar-card interactive-card" tabindex="0">
+                <div class="pillar-heading-row">
+                  <span class="card-status-dot" aria-hidden="true"></span>
+                  <div class="pillar-title">Problem Solving</div>
+                </div>
+                <div class="pillar-text">Continuous algorithmic rigor across data structures, time complexity analysis, and competitive programming.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Panel -->
+          <div class="education-panel interactive-card" tabindex="0">
+            <div class="edu-badge">Academic Credential</div>
+            <h3 class="edu-degree">B.Tech in Computer Science (Data Science)</h3>
+            <p class="edu-institution">Prasad V Potluri Siddhartha Institute of Technology</p>
+
+            <div class="edu-details-grid">
+              <div class="edu-detail-item">
+                <span class="edu-detail-label">Period</span>
+                <span class="edu-detail-val">2024 &ndash; 2028</span>
+              </div>
+              <div class="edu-detail-item">
+                <span class="edu-detail-label">Current Status</span>
+                <span class="edu-detail-val">3rd Year</span>
+              </div>
+              <div class="edu-detail-item">
+                <span class="edu-detail-label">Cumulative GPA</span>
+                <span class="edu-detail-val" style="color: var(--accent);">8.5 / 10.0</span>
+              </div>
+              <div class="edu-detail-item">
+                <span class="edu-detail-label">Location</span>
+                <span class="edu-detail-val">Vijayawada, India</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         FEATURED PROJECT: AUTO PULSE (Large Editorial Case Study)
+         ====================================================================== -->
+    <section class="section" id="work">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-label">Featured Case Study</div>
+          <h2 class="section-title">Intelligent Systems &amp; Applied Engineering</h2>
+          <p class="section-desc">A deep dive into real-world production engineering, vehicle diagnostics, and data handling.</p>
+        </div>
+
+        <article class="project-case-study">
+
+          <!-- Case Study Header -->
+          <div class="project-case-header">
+            <div class="project-case-title-area">
+              <div class="case-tag">Automotive Intelligence &bull; Full-Stack Engineering &bull; Team Eclipse</div>
+              <h3>Auto Pulse</h3>
+              <p>AI-Powered Vehicle Health, Diagnosis &amp; Maintenance Intelligence Platform</p>
+            </div>
+
+            <a href="https://auto-pulse-ten.vercel.app/" target="_blank" rel="noopener noreferrer"
+              class="btn btn-primary" aria-label="Visit Auto Pulse Live Website">
+              <span>Live Demo</span>
+              <span aria-hidden="true">&nearr;</span>
+            </a>
+          </div>
+
+          <!-- Case Study Body -->
+          <div class="project-case-body">
+
+            <!-- Left: Description, Capabilities, Contribution -->
+            <div class="case-narrative-col">
+
+              <div class="case-content-block">
+                <h4>System Overview</h4>
+                <p>
+                  Vehicle owners frequently struggle with fragmented service histories, unexpected repair invoices, and
+                  ambiguous mechanical symptoms. Auto Pulse resolves this friction by aggregating vehicle health
+                  diagnostics, maintenance planning, expense auditing, and garage discovery into a centralized digital
+                  management system.
+                </p>
+                <p>
+                  Rather than relying on generic forms, the platform provides tailored vehicle profile management,
+                  derived health indexing, and structured symptom triage.
+                </p>
+              </div>
+
+              <div class="case-content-block">
+                <h4>Core Capabilities</h4>
+                <div class="capabilities-grid interactive-card-group">
+                  <div class="capability-item interactive-card" tabindex="0">
+                    <div class="capability-heading-row">
+                      <span class="card-status-dot" aria-hidden="true"></span>
+                      <h5>AI Vehicle Diagnosis</h5>
+                    </div>
+                    <p>Analyzes natural language symptom descriptions to generate structured diagnoses with severity levels, probable mechanical causes, and estimated repair urgency.</p>
+                  </div>
+                  <div class="capability-item interactive-card" tabindex="0">
+                    <div class="capability-heading-row">
+                      <span class="card-status-dot" aria-hidden="true"></span>
+                      <h5>Real-Time Telemetry Gauges</h5>
+                    </div>
+                    <p>Monitors critical operational metrics including speed velocity, fuel reserve levels, and engine core operating temperatures.</p>
+                  </div>
+                  <div class="capability-item interactive-card" tabindex="0">
+                    <div class="capability-heading-row">
+                      <span class="card-status-dot" aria-hidden="true"></span>
+                      <h5>Service &amp; Cost Tracking</h5>
+                    </div>
+                    <p>Monitors scheduled maintenance milestones, service recommendations, fuel logging, and categorizes monthly ownership expenses.</p>
+                  </div>
+                  <div class="capability-item interactive-card" tabindex="0">
+                    <div class="capability-heading-row">
+                      <span class="card-status-dot" aria-hidden="true"></span>
+                      <h5>Nearby Garage Discovery</h5>
+                    </div>
+                    <p>Location-assisted discovery of verified service centers and workshops with direct contact channels and verified specialties.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="case-content-block" style="margin-top: 2rem;">
+                <h4>Technical Implementation</h4>
+                <p>
+                  Developed Auto Pulse as part of <strong>Team Eclipse</strong> for the <strong>Eclipse 2026</strong> hackathon, independently handling its core technical implementation across frontend, backend, AI functionality, APIs, database integration, and data handling:
+                </p>
+                <div class="case-specs-list">
+                  <div class="spec-row">
+                    <span class="spec-key">Role &amp; Context</span>
+                    <span class="spec-val">Team Eclipse member &bull; Core technical development &amp; implementation</span>
+                  </div>
+                  <div class="spec-row">
+                    <span class="spec-key">Intelligence</span>
+                    <span class="spec-val">AI triage logic for symptom parsing, severity scoring, and maintenance forecasting</span>
+                  </div>
+                  <div class="spec-row">
+                    <span class="spec-key">Frontend &amp; UX</span>
+                    <span class="spec-val">Responsive interface built with React, Vite, fluid state management, and real-time telemetry gauges</span>
+                  </div>
+                  <div class="spec-row">
+                    <span class="spec-key">Backend &amp; APIs</span>
+                    <span class="spec-val">Public API integration, location search services for nearby garages, and RESTful data handling</span>
+                  </div>
+                  <div class="spec-row">
+                    <span class="spec-key">Data &amp; Persistence</span>
+                    <span class="spec-val">Multi-vehicle profile isolation, fuel logging, service history tracking, and monthly expense auditing</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Right: Interactive Telemetry Preview Widget -->
+            <div class="case-preview-col">
+              <div class="telemetry-preview-panel interactive-card" aria-label="Auto Pulse Telemetry Display Simulation">
+
+                <div class="telemetry-header">
+                  <span class="telemetry-title">Vehicle Telemetry Simulation</span>
+                  <span class="telemetry-status-badge">
+                    <span class="ping-dot" aria-hidden="true"></span>
+                    <span>System Normal</span>
+                  </span>
+                </div>
+
+                <div class="telemetry-metrics-grid interactive-card-group">
+                  <div class="telemetry-tile interactive-card" tabindex="0">
+                    <span class="tile-label">Current Velocity</span>
+                    <div class="tile-number">64<span class="tile-unit">km/h</span></div>
+                  </div>
+                  <div class="telemetry-tile interactive-card" tabindex="0">
+                    <span class="tile-label">Fuel Reserves</span>
+                    <div class="tile-number">78<span class="tile-unit">%</span></div>
+                  </div>
+                  <div class="telemetry-tile interactive-card" tabindex="0">
+                    <span class="tile-label">Engine Core Temp</span>
+                    <div class="tile-number">92<span class="tile-unit">&deg;C</span></div>
+                  </div>
+                  <div class="telemetry-tile interactive-card" tabindex="0">
+                    <span class="tile-label">Health Score</span>
+                    <div class="tile-number" style="color: #10b981;">94<span class="tile-unit">/100</span></div>
+                  </div>
+                </div>
+
+                <div class="ai-diagnosis-preview">
+                  <h6>Diagnostic Triage Engine</h6>
+                  <p>
+                    <strong>Status:</strong> All primary subsystems operating within factory tolerance. Next scheduled
+                    inspection at 10,000 km routine milestone.
+                  </p>
+                </div>
+
+                <div class="spec-row" style="padding-top: 0.5rem;">
+                  <span class="spec-key">Production URL</span>
+                  <a href="https://auto-pulse-ten.vercel.app/" target="_blank" rel="noopener noreferrer"
+                    style="color: var(--accent); font-family: var(--font-mono); font-size: 0.8rem; word-break: break-all;">
+                    auto-pulse-ten.vercel.app &nearr;
+                  </a>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         HACKATHON PARTICIPATION: ECLIPSE 2026 / TEAM ECLIPSE / AUTO PULSE
+         ====================================================================== -->
+    <section class="section" id="hackathon">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-label">Hackathon Participation</div>
+          <h2 class="section-title">Eclipse 2026</h2>
+          <p class="section-desc">Competitive hackathon sprint &bull; Team Eclipse &bull; Project Auto Pulse</p>
+        </div>
+
+        <div class="hackathon-editorial-record interactive-card" tabindex="0" aria-label="Eclipse 2026 Hackathon Record">
+          <div class="hackathon-record-main">
+            <div class="hackathon-record-header">
+              <div class="hackathon-event-badge">
+                <span class="card-status-dot" aria-hidden="true"></span>
+                <span class="hackathon-tag">Hackathon Sprint &bull; 2026</span>
+              </div>
+              <h3 class="hackathon-project-title">Auto Pulse</h3>
+              <p class="hackathon-team-lead">Team Eclipse &bull; AI Vehicle Health &amp; Diagnostics Platform</p>
+            </div>
+
+            <div class="hackathon-contribution-box">
+              <h4 class="hackathon-box-title">Contribution &amp; Technical Scope</h4>
+              <p class="hackathon-contribution-text">
+                Developed Auto Pulse as part of <strong>Team Eclipse</strong>, independently handling its core technical implementation across frontend, backend, AI functionality, APIs, database integration, and data handling.
+              </p>
+            </div>
+          </div>
+
+          <div class="hackathon-metadata-sidebar">
+            <h4 class="hackathon-meta-heading">Project Record</h4>
+            <dl class="hackathon-meta-list">
+              <div class="hackathon-meta-item">
+                <dt class="hackathon-meta-label">Hackathon</dt>
+                <dd class="hackathon-meta-value">Eclipse 2026</dd>
+              </div>
+              <div class="hackathon-meta-item">
+                <dt class="hackathon-meta-label">Team</dt>
+                <dd class="hackathon-meta-value">Eclipse</dd>
+              </div>
+              <div class="hackathon-meta-item">
+                <dt class="hackathon-meta-label">Project</dt>
+                <dd class="hackathon-meta-value">Auto Pulse</dd>
+              </div>
+              <div class="hackathon-meta-item">
+                <dt class="hackathon-meta-label">My Contribution</dt>
+                <dd class="hackathon-meta-value">Core Technical Implementation</dd>
+              </div>
+              <div class="hackathon-meta-item hackathon-meta-areas">
+                <dt class="hackathon-meta-label">Areas Implemented</dt>
+                <dd class="hackathon-areas-tags">
+                  <span class="area-tag">Frontend</span>
+                  <span class="area-tag">Backend</span>
+                  <span class="area-tag">AI Functionality</span>
+                  <span class="area-tag">APIs</span>
+                  <span class="area-tag">Database Integration</span>
+                  <span class="area-tag">Data Handling</span>
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CORE STRENGTHS (Technical Foundations & Practical Capabilities)
+         ====================================================================== -->
+    <section class="section" id="strengths">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-label">Engineering Pillars</div>
+          <h2 class="section-title">Core Strengths</h2>
+          <p class="section-desc">Technical foundations and practical skills I bring to the things I build.</p>
+        </div>
+
+        <div class="strengths-editorial-grid interactive-card-group">
+
+          <article class="strength-card interactive-card" tabindex="0">
+            <div class="strength-card-header">
+              <span class="strength-num">01</span>
+              <span class="card-status-dot" aria-hidden="true"></span>
+            </div>
+            <h3 class="strength-title">Data-Driven Development</h3>
+            <p class="strength-desc">
+              Working with data, analysis and visualization to understand problems and build useful solutions.
+            </p>
+          </article>
+
+          <article class="strength-card interactive-card" tabindex="0">
+            <div class="strength-card-header">
+              <span class="strength-num">02</span>
+              <span class="card-status-dot" aria-hidden="true"></span>
+            </div>
+            <h3 class="strength-title">Software &amp; System Building</h3>
+            <p class="strength-desc">
+              Turning ideas into functional software through structured development, problem solving and implementation.
+            </p>
+          </article>
+
+          <article class="strength-card interactive-card" tabindex="0">
+            <div class="strength-card-header">
+              <span class="strength-num">03</span>
+              <span class="card-status-dot" aria-hidden="true"></span>
+            </div>
+            <h3 class="strength-title">AI &amp; Intelligent Features</h3>
+            <p class="strength-desc">
+              Exploring and integrating AI-driven functionality into practical applications.
+            </p>
+          </article>
+
+          <article class="strength-card interactive-card" tabindex="0">
+            <div class="strength-card-header">
+              <span class="strength-num">04</span>
+              <span class="card-status-dot" aria-hidden="true"></span>
+            </div>
+            <h3 class="strength-title">Full-Stack Implementation</h3>
+            <p class="strength-desc">
+              Working across frontend, backend, APIs, databases and application logic to build complete experiences.
+            </p>
+          </article>
+
+          <article class="strength-card interactive-card" tabindex="0">
+            <div class="strength-card-header">
+              <span class="strength-num">05</span>
+              <span class="card-status-dot" aria-hidden="true"></span>
+            </div>
+            <h3 class="strength-title">Problem Solving &amp; DSA</h3>
+            <p class="strength-desc">
+              Strong foundation in programming, data structures, algorithms and logical problem solving.
+            </p>
+          </article>
+
+          <article class="strength-card interactive-card" tabindex="0">
+            <div class="strength-card-header">
+              <span class="strength-num">06</span>
+              <span class="card-status-dot" aria-hidden="true"></span>
+            </div>
+            <h3 class="strength-title">Product-Focused UI</h3>
+            <p class="strength-desc">
+              Building interfaces that prioritize clarity, usability, responsiveness and meaningful interaction.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         TECHNICAL STACK & SKILLS (Redesigned Editorial Structure)
+         ====================================================================== -->
+    <section class="section" id="stack">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-label-row">
+            <div class="section-label">Technical Disciplines</div>
+            <div class="stack-profile-badge">
+              <span class="badge-label">Focus Areas:</span>
+              <span>Data Science &bull; AI &bull; Software Engineering</span>
+            </div>
+          </div>
+          <h2 class="section-title">Technical Stack &amp; Skills</h2>
+          <p class="section-desc">Practical technologies, systems and foundations applied across engineering and computation.</p>
+        </div>
+
+        <div class="editorial-stack-list">
+
+          <!-- 1. Programming -->
+          <div class="editorial-stack-row">
+            <div class="stack-category-col">
+              <div class="stack-category-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="4 17 10 11 4 5"></polyline>
+                  <line x1="12" y1="19" x2="20" y2="19"></line>
+                </svg>
+              </div>
+              <span class="stack-category-name">Programming</span>
+            </div>
+            <div class="stack-skills-grid interactive-card-group">
+              <div class="interactive-card skill-card" tabindex="0">
+                <span class="card-status-dot" aria-hidden="true"></span>
+                <span class="skill-name">Python</span>
+              </div>
+              <div class="interactive-card skill-card" tabindex="0">
+                <span class="card-status-dot" aria-hidden="true"></span>
+                <span class="skill-name">Java</span>
+              </div>
+              <div class="interactive-card skill-card" tabindex="0">
+                <span class="card-status-dot" aria-hidden="true"></span>
+                <span class="skill-name">C</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Data & Analytics -->
+          <div class="editorial-stack-row">
+            <div class="stack-category-col">
+              <div class="stack-category-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+              <span class="stack-category-name">Data &amp; Analytics</span>
+            </div>
+            <div class="stack-skills-grid interactive-card-group">
+              <div class="interactive-card skill-card" tabindex="0">
+                <span class="card-status-dot" aria-hidden="true"></span>
+                <span class="skill-name">Data Analysis</span>
+              </div>
+              <div class="interactive-card skill-card" tabindex="0">
+                <span class="card-status-dot" aria-hidden="true"></span>
+                <span class="skill-name">Data Visualization</span>
+              </div>
+              <div class="interactive-card skill-card" tabindex="0">
+                <span class="card-status-dot" aria-hidden="true"></span>
+                <span class="skill-name">Data Engineering</span>
+              </div>
+              <div class="interactive-card skill-card" tabindex="0">
+                <span class="card-status-dot" aria-hidden="true"></span>
+                <span class="skill-name">Statistics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. AI / ML -->
+          <div class="editorial-stack-row">
+            <div class="stack-category-col">
+              <div class="stack-category-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="5" r="3"></circle>
+                  <circle cx="5" cy="19" r="3"></circle>
+                  <circle cx="19" cy="19" r="3"></circle>
+                  <line x1="12" y1="8" x2="5" y2="16"></line>
+                  <line x1="12" y1="8" x2="19" y2="16"></line>
+                </svg>
+              </div>
+              <span class="stack-category-name">AI / ML</span>
+            </div>
+            <div class="stack-skills-grid interactive-card-group">
+              <div class="interactive-card skill-card" tabindex="0">
+                <span class="card-status-dot" aria-hidden="true"></span>
+                <span class="skill-name">Machine Learning</span>
+              </div>
+              <div class="interactive-card skill-card" tabindex="0">
+                <span class="card-status-dot" aria-hidden="true"></span>
+                <span class="skill-name">Deep Learning</span>
+              </div>
+              <div class="interactive-card skill-card" tabindex="0">
+                <span class="card-status-dot" aria-hidden="true"></span>
+                <span class="skill-name">Generative AI</span>
+              </div>
+              <div class="interactive-card skill-card" tabindex="0">
+                <span class="card-status-dot" aria-hidden="true"></span>
+                <span class="skill-name">NLP</span>
+              </div>
+              <div class="interactive-card skill-card" tabindex="0">
+                <span class="card-status-dot" aria-hidden="true"></span>
+                <span class="skill-name">Computer Vision</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Data & Databases -->
+          <div class="editorial-stack-row">
+            <div class="stack-category-col">
+              <div class="stack-category-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <span class="stack-category-name">Data &amp; Databases</span>
+            </div>
+            <div class="stack-skills-grid interactive-card-group">
+              <div class="interactive-card skill-card" tabindex="0">
+                <span class="card-status-dot" aria-hidden="true"></span>
+                <span class="skill-name">SQL</span>
+              </div>
+              <div class="interactive-card skill-card" tabindex="0">
+                <span class="card-status-dot" aria-hidden="true"></span>
+                <span class="skill-name">DBMS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Development -->
+          <div class="editorial-stack-row">
+            <div class="stack-category-col">
+              <div class="stack-category-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="2" y1="9" x2="22" y2="9"></line>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="10" y1="6" x2="10.01" y2="6"></line>
+                </svg>
+              </div>
+              <span class="stack-category-name">Development</span>
+            </div>
+            <div class="stack-skills-grid interactive-card-group">
+              <div class="interactive-card skill-card" tabindex="0">
+                <span class="card-status-dot" aria-hidden="true"></span>
+                <span class="skill-name">HTML</span>
+              </div>
+              <div class="interactive-card skill-card" tabindex="0">
+                <span class="card-status-dot" aria-hidden="true"></span>
+                <span class="skill-name">CSS</span>
+              </div>
+              <div class="interactive-card skill-card" tabindex="0">
+                <span class="card-status-dot" aria-hidden="true"></span>
+                <span class="skill-name">JavaScript</span>
+              </div>
+              <div class="interactive-card skill-card" tabindex="0">
+                <span class="card-status-dot" aria-hidden="true"></span>
+                <span class="skill-name">Full-Stack Development</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Computing Foundations -->
+          <div class="editorial-stack-row">
+            <div class="stack-category-col">
+              <div class="stack-category-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                  <rect x="9" y="9" width="6" height="6"></rect>
+                  <line x1="9" y1="1" x2="9" y2="4"></line>
+                  <line x1="15" y1="1" x2="15" y2="4"></line>
+                  <line x1="9" y1="20" x2="9" y2="23"></line>
+                  <line x1="15" y1="20" x2="15" y2="23"></line>
+                  <line x1="20" y1="9" x2="23" y2="9"></line>
+                  <line x1="20" y1="14" x2="23" y2="14"></line>
+                  <line x1="1" y1="9" x2="4" y2="9"></line>
+                  <line x1="1" y1="14" x2="4" y2="14"></line>
+                </svg>
+              </div>
+              <span class="stack-category-name">Computing Foundations</span>
+            </div>
+            <div class="stack-skills-grid interactive-card-group">
+              <div class="interactive-card skill-card" tabindex="0">
+                <span class="card-status-dot" aria-hidden="true"></span>
+                <span class="skill-name">Data Structures &amp; Algorithms</span>
+              </div>
+              <div class="interactive-card skill-card" tabindex="0">
+                <span class="card-status-dot" aria-hidden="true"></span>
+                <span class="skill-name">Object-Oriented Programming</span>
+              </div>
+              <div class="interactive-card skill-card" tabindex="0">
+                <span class="card-status-dot" aria-hidden="true"></span>
+                <span class="skill-name">Digital Logic</span>
+              </div>
+              <div class="interactive-card skill-card" tabindex="0">
+                <span class="card-status-dot" aria-hidden="true"></span>
+                <span class="skill-name">Computer Organization</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Tools -->
+          <div class="editorial-stack-row">
+            <div class="stack-category-col">
+              <div class="stack-category-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <span class="stack-category-name">Tools</span>
+            </div>
+            <div class="stack-skills-grid interactive-card-group">
+              <div class="interactive-card skill-card" tabindex="0">
+                <span class="card-status-dot" aria-hidden="true"></span>
+                <span class="skill-name">Git</span>
+              </div>
+              <div class="interactive-card skill-card" tabindex="0">
+                <span class="card-status-dot" aria-hidden="true"></span>
+                <span class="skill-name">GitHub</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SELECTED CREDENTIALS (Compact Editorial Format)
+         ====================================================================== -->
+    <section class="section" id="credentials">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-label">Foundations &amp; Accreditations</div>
+          <h2 class="section-title">Selected Credentials</h2>
+          <p class="section-desc">Certified industry foundations and continuous algorithmic discipline.</p>
+        </div>
+
+        <div class="credentials-editorial-layout">
+
+          <!-- Certifications List -->
+          <div class="credentials-certs-block">
+            <h3 class="credentials-block-heading">Certifications</h3>
+            <div class="editorial-certs-list interactive-card-group">
+
+              <div class="editorial-cert-row interactive-card" tabindex="0">
+                <div class="cert-title-col">
+                  <span class="card-status-dot" aria-hidden="true"></span>
+                  <span class="cert-title">AWS Data Engineering</span>
+                </div>
+                <span class="cert-provider">EduSkills</span>
+              </div>
+
+              <div class="editorial-cert-row interactive-card" tabindex="0">
+                <div class="cert-title-col">
+                  <span class="card-status-dot" aria-hidden="true"></span>
+                  <span class="cert-title">IBM Data Fundamentals</span>
+                </div>
+                <span class="cert-provider">IBM</span>
+              </div>
+
+              <div class="editorial-cert-row interactive-card" tabindex="0">
+                <div class="cert-title-col">
+                  <span class="card-status-dot" aria-hidden="true"></span>
+                  <span class="cert-title">Programming for Problem Solving Using C</span>
+                </div>
+                <span class="cert-provider">Bytes</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Compact Supporting Algorithmic Practice Detail -->
+          <div class="credentials-practice-block">
+            <h3 class="credentials-block-heading">Algorithmic Practice</h3>
+            <div class="editorial-practice-content interactive-card" tabindex="0">
+              <div class="practice-highlight">
+                <span>250+ coding problems solved</span>
+                <span class="sep">&bull;</span>
+                <span>CodeChef Silver</span>
+                <span class="sep">&bull;</span>
+                <span>LeetCode 50-Day Badge</span>
+              </div>
+              <p class="practice-note">
+                Continuous problem-solving discipline spanning algorithmic complexity, data structures, and computational optimization.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CONTACT / CALL TO ACTION (Short, Punchy & Strong)
+         ====================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+
+        <div class="contact-editorial-panel">
+          <div class="contact-eyebrow">Connect</div>
+          <h2 class="contact-headline">LET'S BUILD<br />SOMETHING USEFUL.</h2>
+          <p class="contact-lead">
+            I like turning ideas, data and technology into useful digital products.
+          </p>
+
+          <div class="contact-actions-row">
+            <a href="mailto:derangulacharantej319@gmail.com" class="contact-btn contact-btn-email"
+              aria-label="Send email to Charan Tej Derangula">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Email</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/charantej-derangula" target="_blank" rel="noopener noreferrer"
+              class="contact-btn contact-btn-secondary" aria-label="Visit LinkedIn Profile">
+              <span>LinkedIn</span>
+              <span aria-hidden="true">&nearr;</span>
+            </a>
+
+            <a href="https://github.com/Charantej-Derangula" target="_blank" rel="noopener noreferrer"
+              class="contact-btn contact-btn-secondary" aria-label="Visit GitHub Profile">
+              <span>GitHub</span>
+              <span aria-hidden="true">&nearr;</span>
+            </a>
+
+            <a href="/Charan-Tej-Derangula-Resume.pdf" target="_blank" rel="noopener noreferrer"
+              class="contact-btn contact-btn-secondary" aria-label="Open Resume in new tab">
+              <span>Resume</span>
+              <span aria-hidden="true">&nearr;</span>
+            </a>
+          </div>
+
+          <div class="contact-location-note">
+            <span>Vijayawada, India</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       MINIMAL PROFESSIONAL FOOTER
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-centered-container">
+      <div class="footer-social-icons" aria-label="Social and Contact Links">
+        <a href="https://github.com/Charantej-Derangula" target="_blank" rel="noopener noreferrer"
+          class="footer-icon-btn" aria-label="GitHub Profile">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z">
+            </path>
+          </svg>
+        </a>
+
+        <a href="https://www.linkedin.com/in/charantej-derangula" target="_blank" rel="noopener noreferrer"
+          class="footer-icon-btn" aria-label="LinkedIn Profile">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
+        </a>
+
+        <a href="mailto:derangulacharantej319@gmail.com" class="footer-icon-btn" aria-label="Send Email">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <div class="footer-copyright">
+        &copy; 2026 Charan Tej Derangula. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       COMMAND PALETTE MODAL (⌘K / Ctrl+K)
+       ====================================================================== -->
+  <div id="cmdModal" class="cmd-modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-label="Command Navigation Palette">
+    <div class="cmd-dialog">
+
+      <div class="cmd-search-bar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="cmdInput" class="cmd-input" placeholder="Type a destination or action..."
+          autocomplete="off" />
+      </div>
+
+      <div class="cmd-results-list" id="cmdResultsList">
+
+        <div class="cmd-group-label">Navigation</div>
+
+        <div class="cmd-option" data-action="nav" data-target="#about">
+          <div class="cmd-option-left">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <span>Go to About &amp; Philosophy</span>
+          </div>
+          <span class="cmd-shortcut">#about</span>
+        </div>
+
+        <div class="cmd-option" data-action="nav" data-target="#work">
+          <div class="cmd-option-left">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+            <span>Go to Work (Auto Pulse Case Study)</span>
+          </div>
+          <span class="cmd-shortcut">#work</span>
+        </div>
+
+        <div class="cmd-option" data-action="nav" data-target="#hackathon">
+          <div class="cmd-option-left">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            <span>Go to Hackathon Participation (Eclipse 2026)</span>
+          </div>
+          <span class="cmd-shortcut">#hackathon</span>
+        </div>
+
+        <div class="cmd-option" data-action="nav" data-target="#strengths">
+          <div class="cmd-option-left">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg>
+            <span>Go to Core Strengths</span>
+          </div>
+          <span class="cmd-shortcut">#strengths</span>
+        </div>
+
+        <div class="cmd-option" data-action="nav" data-target="#stack">
+          <div class="cmd-option-left">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            <span>Go to Technical Stack &amp; Skills</span>
+          </div>
+          <span class="cmd-shortcut">#stack</span>
+        </div>
+
+        <div class="cmd-option" data-action="nav" data-target="#credentials">
+          <div class="cmd-option-left">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+            <span>Go to Selected Credentials</span>
+          </div>
+          <span class="cmd-shortcut">#credentials</span>
+        </div>
+
+        <div class="cmd-option" data-action="nav" data-target="#contact">
+          <div class="cmd-option-left">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            </svg>
+            <span>Go to Contact</span>
+          </div>
+          <span class="cmd-shortcut">#contact</span>
+        </div>
+
+        <div class="cmd-group-label">Quick Actions</div>
+
+        <div class="cmd-option" data-action="resume">
+          <div class="cmd-option-left">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+            </svg>
+            <span>Open Resume (PDF in new tab)</span>
+          </div>
+          <span class="cmd-shortcut">PDF &nearr;</span>
+        </div>
+
+        <div class="cmd-option" data-action="theme">
+          <div class="cmd-option-left">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+            </svg>
+            <span>Toggle Dark / Light Theme</span>
+          </div>
+          <span class="cmd-shortcut">Theme</span>
+        </div>
+
+        <div class="cmd-option" data-action="link" data-url="https://github.com/Charantej-Derangula">
+          <div class="cmd-option-left">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z">
+              </path>
+            </svg>
+            <span>Open GitHub Profile (Charantej-Derangula)</span>
+          </div>
+          <span class="cmd-shortcut">&nearr;</span>
+        </div>
+
+        <div class="cmd-option" data-action="link" data-url="https://www.linkedin.com/in/charantej-derangula">
+          <div class="cmd-option-left">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+            <span>Open LinkedIn Profile</span>
+          </div>
+          <span class="cmd-shortcut">&nearr;</span>
+        </div>
+
+      </div>
+
+      <div class="cmd-dialog-footer">
+        <span>Navigation: &uarr; &darr; &bull; Select: Enter</span>
+        <span>Close: Esc</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Floating Action Button: Back to top -->
+  <button id="backToTopBtn" class="floating-top-btn" aria-label="Scroll back to top" title="Scroll back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
